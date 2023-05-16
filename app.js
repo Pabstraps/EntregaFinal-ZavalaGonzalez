@@ -28,7 +28,7 @@ const pintarCards = data => {
     data.forEach(producto =>{
         templateCard.querySelector(`h5`).textContent = producto.tittle
         templateCard.querySelector(`p`).textContent = producto.precio
-        templateCard.querySelector(`img`)set
+        templateCard.querySelector(`img`).setAttribute("src",producto.thumbnailUrl)
       
         const clone = templateCard.cloneNode (true)
         fragment.appendChild(clone)
